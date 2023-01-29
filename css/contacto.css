@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"); /*para cambiar la fuente por roboto*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*Pra que se pueda ubicar el circulo pequeño  en centro del grande*/
+}
+body {
+  font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+}
+
+/* ---------------------menu------------------------*/
+header{
+  padding: 40px;
+}
+.menu_imagen {
+  height: 50px; /*para darle un tamañlo a la imagen que esta ala lado del texto*/
+  width: 50px; /*para darle un tamaño a la imagen que esta al lado del texto*/
+}
+.menu {
+  display: flex;
+  justify-content: right;
+}
+ul li {
+  list-style: none; /*para eleminar los puntos que tienen las listas en html*/
+   /*para poder ubicar los items*/
+  padding-left:40px; /*para separar los items el uno del otro*/
+}
+ul li a {
+  text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
+  font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
+  text-transform: uppercase; /*para que el texto este en mayusculas*/
+  color: #3B3A3A ; /*para darle el color a la fuente*/
+  font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
+  padding: 10px 20px 10px 20px;
+}
+ul li a:hover {
+  text-decoration: underline 2px; 
+  background-color: white;
+  border-radius: 20px;
+  color: #ff5964;
+}
+.contenedorMenu #hamburguesa{
+  display: none;
+}
+/*--------------------menu--------------------------------*/
+.contacto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px #ff5964,
+    /*para darle la sombra a los bordes*/ inset -4px -4px 6px -1px #ffa62b,
+    /*para darle la sombra a los bordes*/ -0.5px -0.5px 0px #ff5964,
+    /*para darle la sombra a los bordes*/ 0.5px 0.5px 0px #ffa62b,
+    /*para darle la sombra a los bordes*/ 0px 12px 10px -10px #ff5964;
+    border-radius: 12px;
+    background-color: white;
+  }
+  h1 {
+    text-align: center;
+    color: #ff5964;
+  }
+  * {
+    padding: 0%;
+    margin: 0px;
+  }
+  .dato,
+  .area {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 20px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid #ff5964;
+    color: #ff5964;
+  }
+  .dato:focus,
+  .area:focus {
+    border-bottom-color: #ffa62b;
+  }
+  .boton {
+    border-style: none;
+    outline: none;
+    background-color: #ff5964;
+    padding: 15px 100px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .boton:hover {
+    transition: 0.5s;
+    background-color: #ffa62b;
+  }
+  #rellenar{
+    opacity: 0;
+  }
+  /*DISEÑO RESPONSIVO*/
+
+  @media(max-width: 1000px){
+    form{
+      width: 500px;
+    }
+    .boton{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px){
+    /**menu*/
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .informacion .pc{
+      width: 300px;
+      height: 300px;
+    }
+    .contenedorMenu{
+      justify-content: right;
+    }
+    .contenedorMenu #hamburguesa{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: rgba( 255, 255, 255, 0.5);
+      font-size: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .contenedorMenu #hamburguesa:hover{
+      background-color: white;
+      transition: 1s;
+    }
+    #back_menu{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.5);
+      display: none;
+    }
+    .contenedorMenu nav{
+      position: fixed;
+      top: 0;
+      right: -250px;
+      background: white;
+      width: 250px;
+      height: 100vh;
+      padding: 40px;
+      z-index: 1;
+      transition: all 300ms;
+    }
+    .menu{
+      flex-direction: column;
+    }
+    .menu .lista{
+      margin-top: 20px;
+    }
+    .item{
+      color: #ff5964;
+      text-decoration: underline 3px;
+      font-weight: 900;
+    } 
+  }
+  @media(max-width: 500px){
+    form{
+      width: 500px;
+    }
+    .boton{
+      width: 100%;
+    }
+  }
+  /*Terminado de momento*/

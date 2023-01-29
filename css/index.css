@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"); /*para cambiar la fuente por roboto*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*Pra que se pueda ubicar el circulo pequeño  en centro del grande*/
+}
+body {
+  font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+}
+
+/* ---------------------menu------------------------*/
+header{
+  padding: 40px;
+}
+.menu_imagen {
+  height: 50px; /*para darle un tamañlo a la imagen que esta ala lado del texto*/
+  width: 50px; /*para darle un tamaño a la imagen que esta al lado del texto*/
+}
+.menu {
+  display: flex;
+  justify-content: right;
+}
+ul li {
+  list-style: none; /*para eleminar los puntos que tienen las listas en html*/
+   /*para poder ubicar los items*/
+  padding-left:40px; /*para separar los items el uno del otro*/
+}
+ul li a {
+  text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
+  font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
+  text-transform: uppercase; /*para que el texto este en mayusculas*/
+  color: #3B3A3A ; /*para darle el color a la fuente*/
+  font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
+  padding: 10px 20px 10px 20px;
+}
+ul li a:hover {
+  text-decoration: underline 2px; 
+  background-color: white;
+  border-radius: 20px;
+  color: #ff5964;
+}
+.contenedorMenu #hamburguesa{
+  display: none;
+}
+/*--------------------menu--------------------------------*/
+
+.unitecnar {
+  color: #3B3A3A ; /*para cambiarle el color a "UNITECNAR"*/
+  text-decoration: none; /*para qutarle la linea debajo del texto a "UNITECNAR"*/
+}
+.unitecnar:hover {
+  text-decoration: underline 1px; /*Pra que cuando se pase el mause por "UNITECNAR" tenga una linea debajo*/
+}
+article {
+  display: flex; /*para que se pueda ubicar el texto y la imagen del personaje una al lado de la otra*/
+}
+.info {
+  /*las etiquetas que tengan la clase info y esten dendro de una etiqueta article se le aplicaran los siguientes cambios*/
+  padding-left: 140px ; /*para que tenga un espacio entre la imagen y los bordes de la pagina*/
+  padding-right: 10%;
+  padding-top: 10%;
+  font-size: 30px; /*para darle el tamaño a la fuente*/
+  color: #3B3A3A ; /*para darle el color a la funete*/
+  align-items: center; /*para que se ubiquen en el centro*/
+  justify-items: center; /*para que se ubiquen en el centro*/
+}
+
+article .pc {
+  align-items: center; /*para que la imagen con el personaje esten ubicadas al centro del div, no de la pagina como tal*/
+  justify-items: center; /*para que se ubique al centro*/
+  height: 500px; /*se le da un aaltura a la imagen*/
+  width: 500px; /*se le da un ancho a la imagen*/
+}
+.inicioFondo{
+  
+  background-color: #ff5964;
+  background-position: left;
+  
+}
+.titulo_inicio {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center; /*se ubica en el centro de la pagina*/
+  color: #ff5964; /*se le da color al titulo*/
+}
+.informacion {
+  margin-top: 40px; /*para separar los elementos del menu y los de informacion*/
+}
+.imagen {
+  height: 110px; /*para que la imagen tenga alto igual al contenedor */
+  width: 110px; /*para que la imagen deje un espacio de 100 pixeles debajo de ella donde estaran ubicadas las estrellas*/
+}
+
+.tecnologias {
+  text-align: left;
+}
+.skill {
+  width: 160px; /*PARA DARLE UN TAMAÑO AL CONTENEDOR DEL CIRCULO*/
+  height: 160px; /*PARA DARLE UN TAMAÑO AL CONTENEDOR DEL CIRCULO*/
+  position: relative; /**/
+  /*margin: 30px;/*para darle un espacioo entre las imagenes*/
+  margin-top: 30px; /*para darle un espacio arriba*/
+  margin-bottom: 30px; /*para darle un espacio en la parte de abajo*/
+}
+.outer {
+  height: 160px; /*para darle un tamnaño al circulo exterior, que sera el limite del circulo*/
+  width: 160px; /*para darle un tamnaño al circulo exterior, que sera el limite del circulo*/
+  padding: 20px; /*para que el circulo mas pequño quede justo en el centro del mas grande*/
+  border-radius: 50%; /*Para que el borde sea redondo, dandole forma al circulo*/
+  box-shadow: 6px 6px 10px -1px #ffa62b,
+    /*para darle la sombra e los bordes*/ 6px 6px 16px -1px #ff5964;
+}
+.inner {
+  height: 120px; /*para darle un tamnaño al circulo interior, que sera el limite del circulo*/
+  width: 120px; /*para darle un tamnaño al circulo interior, que sera el limite del circulo*/
+  border-radius: 50%; /*Para que el borde sea redondo, dandole forma al circulo*/
+  display: flex; /*para que el circulo se pueda ubicar en el centro del maas grande*/
+  align-items: center; /*Para que la imagen quede en el centro*/
+  justify-content: center; /*Para que la imagen quede en el centro*/
+  box-shadow: inset 4px 4px 6px -1px #ff5964,
+    /*para darle la sombra a los bordes*/ inset -4px -4px 6px -1px #ffa62b,
+    /*para darle la sombra a los bordes*/ -0.5px -0.5px 0px #ff5964,
+    /*para darle la sombra a los bordes*/ 0.5px 0.5px 0px #ffa62b,
+    /*para darle la sombra a los bordes*/ 0px 12px 10px -10px #ff5964; /*para darle la sombra a los bordes*/
+  background-color: white; /*para que el interior del circulo sea blanco y no del color del mas grande*/
+}
+.correccion {
+  height: 110px; /*para las imagenes que sobresalen del circulo*/
+  width: 110px; /*para las imagenes que sobresalen del circulo*/
+}
+.contenedor1 {
+  display: flex;
+  width: 100%;
+  border: #ff5964;
+}
+.contenedor2 {
+  width: 60%;
+}
+.contenedor2 ul li{
+  display: inline-block;
+}
+.contenidoContenedor {
+  width: 40%;
+  font-size: 30px;
+  color: #3B3A3A ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.html {
+  animation: html 2s linear forwards;
+}
+.css {
+  animation: css 2s linear forwards;
+}
+.js {
+  animation: js 2s linear forwards;
+}
+.wordpress {
+  animation: wordpress 2s linear forwards;
+}
+.flutter {
+  animation: flutter 2s linear forwards;
+}
+.mysql {
+  animation: mysql 2s linear forwards;
+}
+.python {
+  animation: python 2s linear forwards;
+}
+.git {
+  animation: git 2s linear forwards;
+}
+.php {
+  animation: php 2s linear forwards;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@keyframes html {
+  100% {
+    stroke-dashoffset: 141.6;
+  }
+}
+@keyframes css {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+@keyframes js {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+@keyframes wordpress {
+  100% {
+    stroke-dashoffset: 94.4;
+  }
+}
+@keyframes flutter {
+  100% {
+    stroke-dashoffset: 448.4;
+  }
+}
+@keyframes mysql {
+  100% {
+    stroke-dashoffset: 94.7;
+  }
+}
+@keyframes python {
+  100% {
+    stroke-dashoffset: 424.8;
+  }
+}
+@keyframes git {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+@keyframes php {
+  100% {
+    stroke-dashoffset: 448.4;
+  }
+}
+.porcentaje {
+  text-align: center;
+  margin-bottom: -30px;
+  color: #ffa62b;
+}
+.pieDePagina{
+  background-color: #ff5964;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoContacto{
+  width: 50px;
+  margin: 20px;
+}
+/*----------------------------------------------responsive---------------------------------------......*/
+
+/*!---------------1180px--------*/
+@media (max-width: 1233px){
+  .contenedor1{
+    padding-bottom: 20px;
+  }
+  .contenedor1 .contenedor2{
+    display: block;
+    }
+  .contenidoContenedor{
+    text-align: left;
+  }
+
+  
+}
+@media (max-width: 1174px){
+  header{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  article{
+    display: block;
+    padding-bottom: 0px;
+  }
+  .informacion{
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+   .persona {
+    text-align: center;
+  }
+}
+/*-----------------1038px*/
+@media (max-width: 1038px){
+  .titulo_inicio{
+    padding-top: 30px;
+  }
+  .contenedor1{
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .contenedor2{
+    width: 100%;
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+  .contenidoContenedor{
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .contenido{
+    padding-top: 0px;
+  }
+}
+/*!746px*/
+
+@media (max-width: 800px){
+  /**menu*/
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .informacion .pc{
+    width: 300px;
+    height: 300px;
+  }
+  .contenedorMenu{
+    justify-content: right;
+  }
+  .contenedorMenu #hamburguesa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba( 255, 255, 255, 0.5);
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .contenedorMenu #hamburguesa:hover{
+    background-color: white;
+    transition: 1s;
+  }
+  #back_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+  }
+  .contenedorMenu nav{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: all 300ms;
+  }
+  .menu{
+    flex-direction: column;
+  }
+  .menu .lista{
+    margin-top: 20px;
+  }
+  .item{
+    color: #ff5964;
+    text-decoration: underline 3px;
+    font-weight: 900;
+  } 
+  
+    
+  /**menu*/
+  
+  .lista{
+    margin: 0px;
+    padding: 0px; 
+  }
+  .menu{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .persona .pc{
+    width: 500px;
+    height: 500px;
+  }
+  .persona{
+   text-align: center;
+  }
+  .info{
+    padding: 20px;
+    padding-left: 2px;
+    padding-top: 10px;
+    text-align: justify;
+  }
+  
+  .contenedor1 .tecnologias{
+    display: block;
+  }
+  
+}
+/*!-----------------500px-----------------*/
+@media (max-width: 500px){
+  .lista{
+    margin: 0px;
+    padding: 0px; 
+  }
+  .menu{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .persona .pc{
+    width: 100%;
+    height: 100%;
+  }
+  .persona{
+    width: 400px;
+  }
+  .info{
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .contenedor1{
+    display: block;
+  }
+  .contenedor2{
+    
+    display: flex;
+  }
+  .listaLenguaje{
+    margin: 6%;
+    padding: 0px;
+  }
+  
+}
+/*!-------------459px----------------------*/
+@media (max-width: 459px){
+  .lista{
+    margin: 0px;
+    padding: 0px; 
+  }
+  .menu{
+    text-align: center;
+  }
+  .persona .pc{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .info{
+    padding: 0px;
+    padding-left: 2px;
+    padding-top: 10px;
+    text-align: justify;
+  }
+  .contenedor1{
+    display: block;
+  }
+  .contenedor2{
+    height: 100%;
+    display: flex;
+  }
+  .listaLenguaje{
+    margin: 6%;
+    padding: 0px;
+  }
+  .contenidoContenedor{
+    height: 100%;
+  }
+}
+/*haciendo responsivo el menu*/

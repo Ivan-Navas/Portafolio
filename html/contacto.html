@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>CONTACTO</title>
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <script src="https://kit.fontawesome.com/23d22acb78.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../multimedia/favicon.png" type="image/x-icon">
+</head>
+<body class="contactos">
+  <!-- background="multimedia/pruebadefondo.jpg" Para agregarle un fondo de pantalla a la pagina-->
+  <header>
+    <!--creacion de la lista que contienen los elementos del menu-->
+    <div class="contenedorMenu">
+      <i id="hamburguesa" class="fa-solid fa-bars"></i>
+    <div id="back_menu"></div>
+    <nav id="nav" class="navegacion">
+    <ul class="menu">
+      <!--ITEM DE INICIO CON LA CLASE MENU PARA QUE LOS 
+      ESTILOS NO SE LE AGREGEN A LOS ITEMS DE TECNOLOGIAS-->
+      <li class="lista">
+        <a class="item" href="../html/index.html">Inicio</a>
+      </li>
+      <li class="lista">
+        <a class="item " href="../html/trabajos.html">Trabajos</a>
+      </li>
+      <li class="lista">
+        <a class="item" href="../html/contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  </header>
+  <div class="contacto">
+    <form id="form" action="https://formspree.io/f/maykardd"
+    method="POST">
+      <h1>Contactame</h1>
+      <input name="name" type="text" class="dato" placeholder="Nombre" required />
+      <input type="email" class="dato" placeholder="Correo" required name="email" />
+      <textarea name="message" class="dato area" placeholder="Mensaje" required></textarea>
+      <input type="submit" class="boton" value="Enviar" />
+    </form>
+    <!--
+    <form id="form" >
+      <h1>Contactame</h1>
+      <input name="name" type="text" class="dato" placeholder="Nombre" required />
+      <input type="email" class="dato" placeholder="Correo" required name="email" />
+      <textarea name="message" class="dato area" placeholder="Mensaje" required></textarea>
+      <input type="submit" class="boton" value="Enviar" />
+    </form>
+    <a id="rellenar" href="mailto:ivanrng.work@gmail.com">mail</a>
+  </div>-->
+  <script src="../js/main.js"></script>
+</body>
+</html>

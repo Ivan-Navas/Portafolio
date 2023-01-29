@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"); /*para cambiar la fuente por roboto*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*Pra que se pueda ubicar el circulo pequeño  en centro del grande*/
+}
+body {
+  font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+}
+
+/* ---------------------menu------------------------*/
+header{
+  padding: 40px;
+}
+.menu_imagen {
+  height: 50px; /*para darle un tamañlo a la imagen que esta ala lado del texto*/
+  width: 50px; /*para darle un tamaño a la imagen que esta al lado del texto*/
+}
+.menu {
+  display: flex;
+  justify-content: right;
+}
+ul li {
+  list-style: none; /*para eleminar los puntos que tienen las listas en html*/
+   /*para poder ubicar los items*/
+  padding-left:40px; /*para separar los items el uno del otro*/
+}
+ul li a {
+  text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
+  font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
+  text-transform: uppercase; /*para que el texto este en mayusculas*/
+  color: #3B3A3A ; /*para darle el color a la fuente*/
+  font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
+  padding: 10px 20px 10px 20px;
+}
+ul li a:hover {
+  text-decoration: underline 2px; 
+  background-color: white;
+  border-radius: 20px;
+  color: #ff5964;
+}
+.contenedorMenu #hamburguesa{
+  display: none;
+}
+/*--------------------menu--------------------------------*/
+.listaTrabajos {
+  display: flex;  
+  justify-content: center;
+
+}
+.contenidoTrabajos{
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 3%;
+}
+
+.imagenMiniatura {
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+}
+.tituloTrabajos{
+  color: #ff5964;
+}
+
+/*DISEÑO RESPONSIVO*/
+@media (max-width: 800px){
+  /**menu*/
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .informacion .pc{
+    width: 300px;
+    height: 300px;
+  }
+  .contenedorMenu{
+    justify-content: right;
+  }
+  .contenedorMenu #hamburguesa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba( 255, 255, 255, 0.5);
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .contenedorMenu #hamburguesa:hover{
+    background-color: white;
+    transition: 1s;
+  }
+  #back_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+  }
+  .contenedorMenu nav{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: all 300ms;
+  }
+  .menu{
+    flex-direction: column;
+  }
+  .menu .lista{
+    margin-top: 20px;
+  }
+  .item{
+    color: #ff5964;
+    text-decoration: underline 3px;
+    font-weight: 900;
+  } 
+}
+@media (max-width: 719px) {
+  .listaTrabajos {
+    display: block;
+    text-align: center;
+  }
+  .contenidoTrabajos{
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .listaTrabajos {
+    display: block;
+    text-align: center;
+  }
+  .contenidoTrabajos{
+    padding-bottom: 20px;
+  }
+}
