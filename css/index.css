@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+  background-color: #0C0F1D;
 }
 
 /* ---------------------menu------------------------*/
@@ -29,7 +30,7 @@ ul li a {
   text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
   font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
   text-transform: uppercase; /*para que el texto este en mayusculas*/
-  color: #3B3A3A ; /*para darle el color a la fuente*/
+  color: #fff ; /*para darle el color a la fuente*/
   font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
   padding: 10px 20px 10px 20px;
 }
@@ -45,7 +46,7 @@ ul li a:hover {
 /*--------------------menu--------------------------------*/
 
 .unitecnar {
-  color: #3B3A3A ; /*para cambiarle el color a "UNITECNAR"*/
+  color: #fff ; /*para cambiarle el color a "UNITECNAR"*/
   text-decoration: none; /*para qutarle la linea debajo del texto a "UNITECNAR"*/
 }
 .unitecnar:hover {
@@ -60,7 +61,7 @@ article {
   padding-right: 10%;
   padding-top: 10%;
   font-size: 30px; /*para darle el tamaño a la fuente*/
-  color: #3B3A3A ; /*para darle el color a la funete*/
+  color: #fff ; /*para darle el color a la funete*/
   align-items: center; /*para que se ubiquen en el centro*/
   justify-items: center; /*para que se ubiquen en el centro*/
 }
@@ -72,16 +73,13 @@ article .pc {
   width: 500px; /*se le da un ancho a la imagen*/
 }
 .inicioFondo{
-  
-  background-color: #ff5964;
   background-position: left;
-  
 }
 .titulo_inicio {
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center; /*se ubica en el centro de la pagina*/
-  color: #ff5964; /*se le da color al titulo*/
+  color: #fff; /*se le da color al titulo*/
 }
 .informacion {
   margin-top: 40px; /*para separar los elementos del menu y los de informacion*/
@@ -107,8 +105,7 @@ article .pc {
   width: 160px; /*para darle un tamnaño al circulo exterior, que sera el limite del circulo*/
   padding: 20px; /*para que el circulo mas pequño quede justo en el centro del mas grande*/
   border-radius: 50%; /*Para que el borde sea redondo, dandole forma al circulo*/
-  box-shadow: 6px 6px 10px -1px #ffa62b,
-    /*para darle la sombra e los bordes*/ 6px 6px 16px -1px #ff5964;
+  
 }
 .inner {
   height: 120px; /*para darle un tamnaño al circulo interior, que sera el limite del circulo*/
@@ -117,13 +114,9 @@ article .pc {
   display: flex; /*para que el circulo se pueda ubicar en el centro del maas grande*/
   align-items: center; /*Para que la imagen quede en el centro*/
   justify-content: center; /*Para que la imagen quede en el centro*/
-  box-shadow: inset 4px 4px 6px -1px #ff5964,
-    /*para darle la sombra a los bordes*/ inset -4px -4px 6px -1px #ffa62b,
-    /*para darle la sombra a los bordes*/ -0.5px -0.5px 0px #ff5964,
-    /*para darle la sombra a los bordes*/ 0.5px 0.5px 0px #ffa62b,
-    /*para darle la sombra a los bordes*/ 0px 12px 10px -10px #ff5964; /*para darle la sombra a los bordes*/
-  background-color: white; /*para que el interior del circulo sea blanco y no del color del mas grande*/
+  background-color:#0C0F1D;; /*para que el interior del circulo sea blanco y no del color del mas grande*/
 }
+
 .correccion {
   height: 110px; /*para las imagenes que sobresalen del circulo*/
   width: 110px; /*para las imagenes que sobresalen del circulo*/
@@ -131,7 +124,6 @@ article .pc {
 .contenedor1 {
   display: flex;
   width: 100%;
-  border: #ff5964;
 }
 .contenedor2 {
   width: 60%;
@@ -142,15 +134,51 @@ article .pc {
 .contenidoContenedor {
   width: 40%;
   font-size: 30px;
-  color: #3B3A3A ;
+  color: #fff ;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-circle {
+
+.html {
   fill: none;
-  stroke: url(#GradientColor);
+  stroke: url(#GradientColorhtml);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.css {
+  fill: none;
+  stroke: url(#GradientColorcss);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.js {
+  fill: none;
+  stroke: url(#GradientColorjs);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.wordpress {
+  fill: none;
+  stroke: url(#GradientColorword);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.mysql {
+  fill: none;
+  stroke: url(#GradientColorsql);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.git{
+  fill: none;
+  stroke: url(#GradientColorgit);
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
@@ -235,10 +263,11 @@ svg {
 .porcentaje {
   text-align: center;
   margin-bottom: -30px;
-  color: #ffa62b;
+  color: #fff;
 }
 .pieDePagina{
-  background-color: #ff5964;
+  
+  background-color: #1B1D2A;
   width: 100%;
   height: 200px;
   display: flex;
@@ -331,14 +360,14 @@ svg {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: rgba( 255, 255, 255, 0.5);
+    background-color: #1B1D2A;
     font-size: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: 1s;
   }
   .contenedorMenu #hamburguesa:hover{
-    background-color: white;
+    background-color: #1B1D2A;
     transition: 1s;
   }
   #back_menu{
@@ -354,7 +383,7 @@ svg {
     position: fixed;
     top: 0;
     right: -250px;
-    background: white;
+    background: #1B1D2A;
     width: 250px;
     height: 100vh;
     padding: 40px;
@@ -368,7 +397,7 @@ svg {
     margin-top: 20px;
   }
   .item{
-    color: #ff5964;
+    color: #fff;
     text-decoration: underline 3px;
     font-weight: 900;
   } 

@@ -1,0 +1,71 @@
+.htmlinner{
+    box-shadow: inset 4px 4px 6px -1px #E56027,
+      inset -4px -4px 6px -1px #E56027,
+      -0.5px -0.5px 0px #E56027,
+      0.5px 0.5px 0px #E56027,
+      0px 12px 10px -10px #E56027;
+  }
+  .htmlouter{
+    box-shadow: 6px 6px 10px -1px #E56027,
+      6px 6px 16px -1px #E56027;
+  }
+
+  .cssinner{
+    box-shadow: inset 4px 4px 6px -1px #2760E5,
+      inset -4px -4px 6px -1px #2760E5,
+      -0.5px -0.5px 0px #2760E5,
+      0.5px 0.5px 0px #2760E5,
+      0px 12px 10px -10px #2760E5;
+  }
+  .cssouter{
+    box-shadow: 6px 6px 10px -1px #2760E5,
+      6px 6px 16px -1px #2760E5;
+  }
+
+  .jsinner{
+    box-shadow: inset 4px 4px 6px -1px #EAD41C,
+      inset -4px -4px 6px -1px #EAD41C,
+      -0.5px -0.5px 0px #EAD41C,
+      0.5px 0.5px 0px #EAD41C,
+      0px 12px 10px -10px #EAD41C;
+  }
+  .jsouter{
+    box-shadow: 6px 6px 10px -1px #EAD41C,
+      6px 6px 16px -1px #EAD41C;
+  }
+
+  .wordinner{
+    box-shadow: inset 4px 4px 6px -1px #1F6F93,
+      inset -4px -4px 6px -1px #1F6F93,
+      -0.5px -0.5px 0px #1F6F93,
+      0.5px 0.5px 0px #1F6F93,
+      0px 12px 10px -10px #1F6F93;
+  }
+  .wordouter{
+    box-shadow: 6px 6px 10px -1px #1F6F93,
+      6px 6px 16px -1px #1F6F93;
+  }
+
+  .sqlinner{
+    box-shadow: inset 4px 4px 6px -1px #245176,
+      inset -4px -4px 6px -1px #245176,
+      -0.5px -0.5px 0px #245176,
+      0.5px 0.5px 0px #245176,
+      0px 12px 10px -10px #245176;
+  }
+  .sqlouter{
+    box-shadow: 6px 6px 10px -1px #245176,
+      6px 6px 16px -1px #245176;
+  }
+
+  .gitinner{
+    box-shadow: inset 4px 4px 6px -1px #E44D30,
+      inset -4px -4px 6px -1px #E44D30,
+      -0.5px -0.5px 0px #E44D30,
+      0.5px 0.5px 0px #E44D30,
+      0px 12px 10px -10px #E44D30;
+  }
+  .gitouter{
+    box-shadow: 6px 6px 10px -1px #E44D30,
+      6px 6px 16px -1px #E44D30;
+  }
