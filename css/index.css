@@ -360,14 +360,14 @@ svg {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #1B1D2A;
+    background-color: #fff;
     font-size: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: 1s;
   }
   .contenedorMenu #hamburguesa:hover{
-    background-color: #1B1D2A;
+    background-color: #ff5964;
     transition: 1s;
   }
   #back_menu{
@@ -397,7 +397,7 @@ svg {
     margin-top: 20px;
   }
   .item{
-    color: #fff;
+    color: #ff5964;
     text-decoration: underline 3px;
     font-weight: 900;
   } 

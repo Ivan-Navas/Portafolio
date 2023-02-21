@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+  background-color: #0C0F1D;
 }
 
 /* ---------------------menu------------------------*/
@@ -29,11 +30,11 @@ ul li a {
   text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
   font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
   text-transform: uppercase; /*para que el texto este en mayusculas*/
-  color: #3B3A3A ; /*para darle el color a la fuente*/
+  color: #fff ; /*para darle el color a la fuente*/
   font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
   padding: 10px 20px 10px 20px;
 }
-ul li a:hover {
+ul li .item:hover {
   text-decoration: underline 2px; 
   background-color: white;
   border-radius: 20px;
@@ -83,14 +84,14 @@ ul li a:hover {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: rgba( 255, 255, 255, 0.5);
+    background-color: #fff;
     font-size: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: 1s;
   }
   .contenedorMenu #hamburguesa:hover{
-    background-color: white;
+    background-color: #ff5964;
     transition: 1s;
   }
   #back_menu{
@@ -106,7 +107,7 @@ ul li a:hover {
     position: fixed;
     top: 0;
     right: -250px;
-    background: white;
+    background: #1B1D2A;
     width: 250px;
     height: 100vh;
     padding: 40px;
@@ -126,7 +127,7 @@ ul li a:hover {
   } 
 }
 .pieDePagina{
-  background-color: #ff5964;
+  background-color: #1B1D2A;
   width: 100%;
   height: 200px;
   display: flex;

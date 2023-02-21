@@ -6,6 +6,10 @@
 }
 body {
   font-family: "Roboto", sans-serif; /*para cambiar la fuente por roboto*/
+  background-color: #0C0F1D;
+}
+#form{
+  background-color: #1B1D2A;
 }
 
 /* ---------------------menu------------------------*/
@@ -29,7 +33,7 @@ ul li a {
   text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
   font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
   text-transform: uppercase; /*para que el texto este en mayusculas*/
-  color: #3B3A3A ; /*para darle el color a la fuente*/
+  color: #fff ; /*para darle el color a la fuente*/
   font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
   padding: 10px 20px 10px 20px;
 }
@@ -85,6 +89,7 @@ ul li a:hover {
     transition: all 300ms;
     border-bottom: 1px solid #ff5964;
     color: #ff5964;
+    background-color: #0C0F1D;
   }
   .dato:focus,
   .area:focus {
@@ -98,11 +103,65 @@ ul li a:hover {
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    animation-name: rgb;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
-  .boton:hover {
-    transition: 0.5s;
-    background-color: #ffa62b;
+  @keyframes rgb {
+    0%{
+      background-color: #1B1D2A;
   }
+  6.25%{
+      background-color: #FF0000;
+  }
+  12.5%{
+      background-color: #F3FF00 ;
+  }
+  18.75%{
+      background-color: #4DFF00 ;
+  }
+  25%{
+      background-color: #00FFB9 ;
+  }
+  31.25%{
+      background-color: #0032FF;
+  }
+  37.5%{
+      background-color: #D800FF ;
+  }
+  43.75%{
+      background-color: #FF0000 ;
+  }
+  50%{
+      background-color: #D800FF ;
+  }
+  56.25%{
+      background-color: #0032FF ;
+  }
+  62.5%{
+      background-color: #00FFB9;
+  }
+  69%{
+      background-color: #4DFF00 ;
+  }
+  75.25%{
+      background-color: #F3FF00 ;
+  }
+  81.5%{
+      background-color: #FFAA00 ;
+  }
+  87.75%{
+      background-color: #FF0000 ;
+  }
+  94%{
+      background-color: #FF0000 ;
+  }
+  100%{
+      background-color: #1B1D2A ;
+  }
+  }
+  
   #rellenar{
     opacity: 0;
   }
@@ -136,14 +195,14 @@ ul li a:hover {
       justify-content: center;
       width: 50px;
       height: 50px;
-      background-color: rgba( 255, 255, 255, 0.5);
+      background-color: #fff;
       font-size: 20px;
       border-radius: 50px;
       cursor: pointer;
       transition: 1s;
     }
     .contenedorMenu #hamburguesa:hover{
-      background-color: white;
+      background-color: #ff5964;
       transition: 1s;
     }
     #back_menu{
@@ -159,7 +218,7 @@ ul li a:hover {
       position: fixed;
       top: 0;
       right: -250px;
-      background: white;
+      background: #1B1D2A;
       width: 250px;
       height: 100vh;
       padding: 40px;
@@ -179,7 +238,7 @@ ul li a:hover {
     } 
   }
   .pieDePagina{
-    background-color: #ff5964;
+    background-color: #1B1D2A;
     width: 100%;
     height: 200px;
     display: flex;
