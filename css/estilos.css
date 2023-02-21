@@ -26,7 +26,7 @@ ul li {
    /*para poder ubicar los items*/
   padding-left:40px; /*para separar los items el uno del otro*/
 }
-ul li a {
+ul li .item {
   text-decoration: none; /*para eliminar la linea inferior que tienen las listas en html*/
   font-size: 18px; /*para definir el tamaño de la letra(fuente)*/
   text-transform: uppercase; /*para que el texto este en mayusculas*/
@@ -34,7 +34,7 @@ ul li a {
   font-weight: 700; /*para darle el peso a la fuente(si se utiliza las fuentes de google, se debe escojer una opcion que se seleccionara al momento de importarla)*/
   padding: 10px 20px 10px 20px;
 }
-ul li a:hover {
+ul li .item:hover {
   text-decoration: underline 2px; 
   background-color: white;
   border-radius: 20px;
@@ -360,14 +360,14 @@ svg {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #1B1D2A;
+    background-color: #fff;
     font-size: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: 1s;
   }
   .contenedorMenu #hamburguesa:hover{
-    background-color: #1B1D2A;
+    background-color: #ff5964;
     transition: 1s;
   }
   #back_menu{
@@ -397,7 +397,7 @@ svg {
     margin-top: 20px;
   }
   .item{
-    color: #fff;
+    color: #ff5964;
     text-decoration: underline 3px;
     font-weight: 900;
   } 
@@ -504,3 +504,4 @@ svg {
   }
 }
 /*haciendo responsivo el menu*/
+
