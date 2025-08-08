@@ -3,7 +3,7 @@ import { BiLogoGithub, BiLogoLinkedinSquare, BiLogoWhatsapp } from "react-icons/
 
 function TopBar () {
   return (
-    <div className="w-screem h-[68px] flex px-[100px] mt-[35px] ">
+    <div className="w-full h-[103px] bg-[#FF5943] flex px-[100px] pt-[35px] fixed">
       <div className="w-[194px] h-[68px] bg-white rounded-s-[16px] flex items-center justify-center">
         <h2 className="text-[20px] text-[#FF5943] text-roboto font-extrabold ">PORTAFOLIO</h2>
       </div> 
