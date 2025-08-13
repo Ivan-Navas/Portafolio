@@ -42,7 +42,10 @@ function WorksCard ({ title, image, description, status, figmaUrl, gitHubUrl,web
               </a>
             }
             {figmaUrl &&
-              <a className="w-[50px] h-[50px] bg-white flex items-center justify-center cursor-pointer">
+              <a className="w-[50px] h-[50px] bg-white flex items-center justify-center cursor-pointer"
+                href={figmaUrl}
+                target="_blank"
+              >
                 <BiLogoFigma className="w-[40px] h-[40px] text-[#FF5943]" />
               </a>
             }
