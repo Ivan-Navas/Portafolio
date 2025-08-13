@@ -8,7 +8,7 @@ function HomeScreen () {
     <div className="flex  pl-[128px]" id="main">
       <div className="flex items-center jusify-center">
         <div className="">
-          <h2 className="text-[#FFC564] text-roboto text-[20px] text-right font-extrabold">Full-Stack Debeloper</h2>
+          <h2 className="text-[#FFC564] text-roboto text-[20px] text-right font-extrabold">Full-Stack Developer</h2>
           <h1 className="w-[301px] text-white text-[90px] text-right font-extrabold leading-tight">IVÁN NAVAS</h1>
           <div className="flex items-center justify-between">
             <h2 className="w-[169px] text-white text-roboto text-[16px] font-extrabold">Me gusta estar en constante aprendisaje</h2>
