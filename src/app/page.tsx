@@ -6,7 +6,7 @@ import Works from "@/components/Works";
 export default function Home() {
   return (
     <div className="relative">
-      <div className="w-full h-[68px] mb-[20px]">
+      <div className="w-full h-[68px] mb-[40px] lg:mb-[20px]">
         <TopBar />
       </div>
       <div className="w-full flex justify-center">

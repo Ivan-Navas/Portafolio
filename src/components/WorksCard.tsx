@@ -14,8 +14,8 @@ interface Props {
 
 function WorksCard ({ title, image, description, status, figmaUrl, gitHubUrl,webUrl }: Props ) {
   return (
-    <div className="w-[594px] h-[196px] flex mb-[54px] ">
-      <div className="w-[245px] h-[195px] rounded-s-[16px] border border-white">
+    <div className="w-full md:w-[594px] h-[196px] md:flex mb-[54px]">
+      <div className="w-full h-[195px] md:w-[245px] rounded-t-[16px] sm:rounded-t-[16px] md:rounded-tr-[0px] md:rounded-l-[16px] border border-white">
         <div className="flex items-center justify-between">
           <div className="w-[50px] h-[51px] flex items-center justify-center rounded-tl-[16px] rounded-br-[16px] bg-white mt-[-1px]" title={status}>
             {status === "En proceso" ?
@@ -42,7 +42,7 @@ function WorksCard ({ title, image, description, status, figmaUrl, gitHubUrl,web
               </a>
             }
             {figmaUrl &&
-              <a className="w-[50px] h-[50px] bg-white flex items-center justify-center cursor-pointer"
+              <a className="w-[50px] h-[50px] bg-white flex items-center justify-center cursor-pointer rounded-tr-[16px] md:rounded-tr-[0px]"
                 href={figmaUrl}
                 target="_blank"
               >
@@ -55,7 +55,7 @@ function WorksCard ({ title, image, description, status, figmaUrl, gitHubUrl,web
           <Image src={image} alt="WorkImage" width={120} height={120} className="rounded-s-[16px]" />
         </div>
       </div>
-      <div className="w-[353px] h-[195px] border-y-1 border-r-1 rounded-e-[16px] px-[10px]">
+      <div className="w-[353px] h-[195px] border-b-1 border-r-1 border-l-1 sm:border-l-[0px] sm:border-l-[1px] md:border-b-1 md:border-l-[0px] md:border-t-1 rounded-b-[16px] md:rounded-bl-[0px] md:rounded-r-[16px] px-[10px]">
         <h2 className="text-center text-[#FFC564] text-[40px] font-extrabold ">{title}</h2>
         <p className="text-roboto text-[20px] text-white font-extrabold">{description}</p>
       </div>

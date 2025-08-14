@@ -4,10 +4,10 @@ import WorksCard from "./WorksCard";
 
 function Works () {
   return (
-    <div className="px-[20px] grid grid-cols-2 gap-[20px]">
+    <div className="px-[20px] md:grid xl:grid-cols-2 gap-[20px]">
       {works.map((work)=>{
         return (
-          <div key={work.id}>
+          <div className="h-[400px] md:h-[200px]" key={work.id}>
             <WorksCard
               title={work.title}
               image={work.image}

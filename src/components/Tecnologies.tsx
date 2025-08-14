@@ -4,7 +4,7 @@ import TecnologiesCard from "./TecnologiesCard";
 
 function Tecnologies () {
   return (
-    <div className="grid grid-cols-3 px-[100px] gap-[20px]">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 px-[100px] gap-[20px]">
       {tecnologies.map((tecno)=>{
         return(
           <div key={tecno.id}>
